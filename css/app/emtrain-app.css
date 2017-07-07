@@ -1,0 +1,273 @@
+/* Overrides for the website css */
+
+.footer {
+	background-color:#1e2864; 
+	padding-top: 13px; 
+	color:#e1e1e2;
+}
+.footer a { color:rgba(255, 255, 255, 0.60); }
+.footer a:hover { color:rgba(255, 255, 255, 0.80); text-decoration:underline; }
+.em-footer-connect { margin-top:6px; }
+.em-footer-connect { margin-right:8px; }
+.em-footer-brand { padding-top:18px; }
+.em-footer-brand p { margin-top:10px; }
+
+.navbar-brand {
+	padding: 0 15px 0 14px;
+}
+.navbar-toggle {
+	margin: 0 0 0 18px;
+	padding: 4px 6px 0 0;
+	height: 30px;
+}
+
+.em-logo { height: 30px }
+
+.navbar-collapse { 
+	border-top: none;
+	-webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0);
+	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0);
+}
+.dropdown-menu .divider {
+	background-color: rgba(0,0,0,0.1);
+}
+.list-group {
+	padding-top: 12px;
+}
+.list-group-item {
+	border:0;
+	background-color: transparent;
+}
+#secondarynavbar li.em-product-name { margin-right:20px; }
+#secondarynavbar a.em-product-name-link { color:#fff; background-color:transparent; }
+.wrap-header { margin-bottom:30px; }
+.wrap-header img { display:block; margin-bottom:10px; }
+.wrap-header small { display:block; line-height: 1.0em; margin: 0 0 10px 0; padding: 0 0 0 0; font-size:15px; }
+.wrap-header h1 { line-height: 1.0em; margin-top:-7px; padding-top:0; }
+
+/* Toggles */
+
+.toggle.pill, .toggle-on.pill, .toggle-off.pill { border-radius: 10px; }
+.toggle.pill .toggle-handle { border-radius: 10px; }
+.toggle { border-radius: 0px;}
+.toggle .toggle-handle { border-radius: 0px; }
+ 
+/* Search Mods */
+.search { position: relative; }
+.search input { 
+	text-indent: 18px; 
+	background-color: transparent; 
+	border:0; 
+	border-bottom:2px rgba(255,255,255,0.4) solid;
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+	color:#fff;
+}
+.search .fa-search { 
+	position: absolute;
+	top: 38px;
+	left: 9px;
+	font-size: 15px;
+	color:rgba(255,255,255,0.3);
+}
+.styled-search::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
+.styled-search:-moz-placeholder { color: rgba(255,255,255,0.6); }
+.styled-search::-moz-placeholder { color: rgba(255,255,255,0.6); }
+.styled-search:-ms-input-placeholder { color: rgba(255,255,255,0.6); }
+
+/* inline / contextual toolbar (navbar item) */
+.navbar-em-contextual { 
+	background-color: rgba(255, 255, 255, 0.90);    	
+	padding: 4px 14px 4px 0;
+	margin-bottom: 1px;
+}
+.navbar-em-contextual .dropdown-menu i { padding-right:11px; white-space: nowrap; }
+.navbar-em-contextual .dropdown-menu .checkbox { padding-left:8px; padding-right:11px; white-space: nowrap; }
+
+#em-sortable { font-size:12px; }
+
+/* Toolbar */
+#em-sortable-toolbar { margin-bottom:10px; }
+#em-sortable-toolbar .btn-link { color:#999; }
+#em-sortable-toolbar .btn-link:hover { color:#444; }
+
+/* Table */
+#em-sortable thead { background-color: rgba(255,255,255,0.90); }
+#em-sortable thead tr, 
+#em-sortable tfoot tr, 
+#em-sortable thead tr:hover, 
+#em-sortable tfoot tr:hover { background-color: transparent; }
+#em-sortable th:not(:first-child) { border-left: 1px #eee solid; }
+
+#em-sortable tbody tr:nth-child(odd) {
+	background-color: rgba(255,255,255,0.60);
+	color:#777;	
+}  
+#em-sortable tbody tr:nth-child(even) { 
+	background-color: rgba(255,255,255,0.30);
+	color:#777;
+}  
+#em-sortable tbody tr:hover { 
+	background-color: #fff;
+	color:#212121;
+}
+
+.em-sortable-header-checkbox { margin:0 0 0 0; padding:0 0 3px 0; }
+
+#em-sortable td { vertical-align: middle; }
+#em-sortable td:not(:first-child) { border-left: 1px #eee solid; }
+#em-sortable a { color: #444; }
+#em-sortable a:hover { color: #3F51B5; text-decoration:underline; }
+
+/* Select item; Table sortable 
+ ---------------------------------------- */
+.select2-container--default .select2-selection--single {
+	border:0;
+}
+
+/* Dropdown menu in a responsive table fix 
+ ---------------------------------------- */
+.em-contextual-dropdown { overflow:visible; margin:0 0 0 0; padding:0 0 0 0; }
+.em-contextual-dropdown .btn-link { color:#999; }
+.em-contextual-dropdown .btn-link:hover, 
+.em-contextual-dropdown .btn-link:active { text-decoration: none; background-color:rgba(200,200,200,0.2); }
+
+td.em-contextual-slot {
+	padding:8px 0 8px 0; 
+}
+.em-sortable-pagination { margin: 4px 0 20px 0; }
+
+@media (max-width: 767px) {
+.table-responsive .dropdown-menu {
+	position: static !important;
+}
+}
+@media (min-width: 768px) {
+	.table-responsive {
+		overflow: visible;
+	}
+}
+
+#pagination { margin-bottom:40px; }
+.pagination li a { color:#999; }
+
+
+/* pickadate.js Date/Time Header Input Type Styling
+ -------------------------- */	
+input#datepicker { 
+	padding-left:8px;
+	border-radius:3px;
+	border-color: #fff;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1.0);
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1.0);
+	font-size:13px;
+	color: #444;
+	height:28px 
+}
+input#datepicker::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    #444;
+}
+input#datepicker:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #444;
+   opacity:  1;
+}
+input#datepicker::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #444;
+   opacity:  1;
+}
+input#datepicker:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #444;
+}
+
+
+/* Primary Navbar Modification */
+.navbar-em-primary #fa-openclose i { color: rgba(255,255,255,0.80); }
+
+
+/* Course detail mods */
+#summary strong { font-size:200%; }	
+#currentStats strong { font-size:200%; }	
+.uppercase { text-transform:uppercase; margin-top:0; padding-top:0; }
+.panel-buttons { width:90%; }
+.panel-title {
+	border-bottom:1px rgba(100,100,100,0.1) solid;
+	padding-bottom:12px;
+}
+a.collapsed { color:#444; text-decoration:none; }
+a:hover.collapsed { color:#5bc0de; }
+
+/* em-detail-col-left is the video preview column,
+   this give it a touch more padding on desktop sizes
+   and reverts to bootstrap defaults for smaller than 1200px. 
+ ---------------------------- */
+
+@media (max-width:480px) {
+	.em-detail-col-left {
+		padding-bottom: 30px;
+	}
+	.em-detail-col-right {
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width:768px) {
+	.em-detail-col-left {
+		padding-bottom: 20px;
+	}
+	.em-detail-col-right {
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width:992px) {
+	.em-detail-col-left {
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width:1200px) {
+	.em-detail-col-left {
+		padding-right:30px;
+		padding-bottom: 20px;
+	}
+}
+
+/* Tabs 
+ ---------------------------- */
+
+.em-nav-tabs {
+	margin-bottom:10px;
+}
+.em-nav-tabs>li { 
+	margin-right:8px;
+}
+.em-nav-tabs>li.active>a, .em-nav-tabs>li.active>a:hover, .em-nav-tabs>li.active>a:focus {
+	color: #222;
+	background-color: #f9f9f9; /* 249,249,249 */
+	border: 1px solid rgba(200,200,200,0.2);
+	border-top: 2px solid #fff;
+	border-bottom-color: #f9f9f9;
+	cursor: default;
+	font-weight:bold;
+}
+.em-nav-tabs>li>a, .em-nav-tabs>li>a:hover {
+	color: #666;
+}
+.em-tab-content {
+	padding:0 10px 10px 10px;
+}
+
+@media (max-width:480px) {
+	.em-nav-tabs>li {
+		margin: 0 0 0 0;
+		width:100%;
+	}
+	.em-nav-tabs>li.active>a, .em-nav-tabs>li.active>a:hover, .em-nav-tabs>li.active>a:focus {
+		border: 1px solid rgba(200,200,200,0.2);
+		cursor: default;
+		font-weight:bold;
+	}
+
+}
+
+

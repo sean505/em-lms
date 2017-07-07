@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Emtrain Learning Management System</title>
+
+    <link href="./css/app/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="./css/select2.min.css" rel="stylesheet">
+	<link href="./js/app/pickadate/themes/classic.css" rel="stylesheet">
+	<link href="./js/app/pickadate/themes/classic.date.css" rel="stylesheet">
+	<link href="./js/app/pickadate/themes/classic.time.css" rel="stylesheet">
+
+        <link href="./css/app/emtrain-app.css" rel="stylesheet">
+    <link href="./css/em-styleguide.css" rel="stylesheet">
+    <link href="./css/app/emtrain-skin-white.css" rel="stylesheet">
+
+    <link href="./css/card.css" rel="stylesheet">
+    <link href="./css/emtrain.css" rel="stylesheet">
+    
+    
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
+<!-- 	<script src="https://use.fontawesome.com/2d565a8580.js"></script> -->
+	<script src="https://use.fontawesome.com/26dd72341c.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.min.js"></script>
+      <script src="./js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="catalog-bg">
+
+<!-- primary navbar -->
+<nav class="navbar navbar-em-primary navbar-fixed-top">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button id="fa-openclose" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#secondarynavbar" aria-expanded="false" aria-controls="navbar">
+		<i class="fa fa-bars fa-lg"></i>
+	  </button>
+	  <a class="navbar-brand" href="http://macbookpro.local/emtrain-ux-stage/">
+		<img src="./images/emtrain-header-logo-black-lg.png" class="img-responsive em-logo" alt="Emtrain" title="Emtrain">
+	  </a>
+	</div>
+
+	<div id="navbar" class="collapse navbar-collapse">
+	  
+	<ul class="nav navbar-nav navbar-right" >
+		<li>
+		  <a href="#account">
+			My Account <i class="fa fa-user fa-lg"><span class="caret"></span></i>
+		  </a>
+		</li>
+	  </ul>
+
+		
+	  
+	  		   
+	</div>
+
+ </div>
+</nav>
+
+<nav class="navbar navbar-em-secondary navbar-static-top">
+
+  <div class="container-fluid">
+	<div class="row">  
+<!--
+	<div id="secondarynavbar" class="collapse navbar-collapse">
+
+	</div>
+--><!--/.nav-collapse -->
+	</div>
+  </div>
+
+</div>          
+</nav>          
+
+
+<!-- Begin page content -->
+<div class="container-fluid dashboard">
+ <div class="row">
+		
+		<div class="col-xs-12">
+			<!-- <small class="text-muted">Administrator Dashboard</small> -->
+			<div class="col-md-6"> 
+			<h1 class="text-default" style="padding-left: 20px;">Learner Dashboard</h1>
+			</div>
+			<div class="col-md-6"> 
+			<div id="navbar" class="collapse navbar-collapse">
+	  
+		
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ADMIN TOOLS&nbsp;&nbsp; <img src="images/gear.png"> <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Assign Training</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">View Learners By</li>
+						<li><a href="#">Email History</a></li>
+						<li><a href="#">Learner Groups <span class="badge pull-right">4</span></a></li>
+						<li><a href="#">By Learner <span class="badge pull-right">154</span></a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Email Learner Groups</a></li>
+						<li><a href="#">Print Login Sheets</a></li>                
+						<li class="dropdown-header">New Learners</li>
+						<li><a href="#">Add New Learner</a></li>
+						<li><a href="#">Upload &amp; Edit Learners</a></li>
+					  </ul>
+					</li>
+
+			
+					<li><a href="#"><i class="fa fa-question-circle fa-lg"></i></a></li>
+	  </ul>
+
+	  		   
+			</div>
+			</div>
+		</div>
+
+		<!-- main content -->
+		<div class="col-xs-12">
+		
+		<div class="wrap-main">
+
+
+		<div class="row">  
+			
+			<div class="col-md-12">
+				<div class="col-md-12" style="margin-left: 20px;">
+					<div class="col-md-8">
+						<div class="col-md-4 data-badges">
+						   <h4><span class="badge">406</span>Assigned Courses</h4>
+						</div>
+						<div class="col-md-4 data-badges">
+						   <h4><span class="badge">252</span>Courses Overdue</h4>
+						</div>
+						<div class="col-md-4 data-badges">
+						   <h4><span class="badge">154</span>Completed Courses</h4>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-md-5" style="margin: 0;">
+				
+				<div class="col-md-12 select-box">
+					<h2 style="margin-top: 0;">My Assignments</h2>
+<!-- 					<p>What are the non-assigned resources accessed most often by your team?</p> -->
+					<ul class="assignments">
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+						<li>
+							<div>
+								<h4>Course Name Title</h4>
+								<p>Human Resources Training | <span class="date-highlight">Due July 19, 2017</span></p>
+								<span class="badge-lg">RESUME</span> 
+							</div>	
+						</li>
+					</ul>	
+						
+				</div>
+			</div>
+			
+				<div class="col-md-6">
+			<div class="col-md-12 select-box take-action">
+				<form class="navbar-form" role="search">
+					<div class="form-group search col-md-12">
+					  <span class="fa fa-search fa-lg"></span>
+					  <label>SEARCH RESOURCES</label>
+					  <input type="text" class="form-control styled-search" name="search" placeholder="Search" style="border: 1px solid #E7E7E7; border-radius: 4px; background: #ffffff; width: 100%; margin-left: -15px;">
+					</div>
+					<button type="submit" class="btn btn-default hidden">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-12 select-box take-action">
+				<h3>Browse Resources</h3>
+				<div class="resource-labels">
+					<span class="label label-default">Default Label</span>
+  				    <span class="label label-primary">Primary Label</span>
+					<span class="label label-success">Success Label</span>
+					<span class="label label-info">Info Label</span>
+					<span class="label label-warning">Warning Label</span>
+					<span class="label label-danger">Danger Label</span>
+				</div>
+				
+				<h4>Recommended Resources</h4>
+				
+				<div class="col-md-6">
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				
+				</div>
+				
+				<div class="col-md-6">
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				<div class="course" onclick="location.href=&quot;/courses/3616-antitrust-and-competition-law&quot;" style="cursor: pointer;cursor: hand;">
+					<p> TOPIC NAME</p>
+					<h4>
+					Antitrust and Competition Law
+					</h4>
+					<div class="action" style="margin-bottom: 40px;">
+						<a class="view-course small" href="/courses/3616-antitrust-and-competition-law">Posted in [Category]</a>
+					</div>
+					<div class="text-center"><button class="btn btn-primary">JOIN</button></div>
+				</div>
+				
+				
+				</div>
+				
+				
+				
+			</div>	
+			
+			
+			
+			</div>
+				
+				<div class="col-md-7 select-box my-history">
+
+					<h2 style="margin-top: 0;">My History</h2>
+<!-- 					<p>What are the non-assigned resources accessed most often by your team?</p> -->
+					
+					<ul class="history">
+						<li>
+							<div class="col-md-12">
+								<div class="col-md-8" style="margin-left: -15px;"><h4>Course Name Title</h4></div>
+								<div class="col-md-3 pull-right"><span class="badge-lg">REVIEW</span></div>
+								<div class="col-md-12" style="margin-left: -15px;"><span class="webinar-highlight">WEBINAR</span> | Human Resources Training | <span class="date-highlight">Completed July 19, 2017</span></div>
+							</div>	
+						</li>
+						<li>
+							<div class="col-md-12">
+								<div class="col-md-8" style="margin-left: -15px;"><h4>Course Name Title</h4></div>
+								<div class="col-md-3 pull-right"><span class="badge-lg">REVIEW</span></div>
+								<div class="col-md-12" style="margin-left: -15px;"><span class="webinar-highlight">WEBINAR</span> | Human Resources Training | <span class="date-highlight">Completed July 19, 2017</span></div>
+							</div>	
+						</li>
+						<li>
+							<div class="col-md-12">
+								<div class="col-md-8" style="margin-left: -15px;"><h4>Course Name Title</h4></div>
+								<div class="col-md-3 pull-right"><span class="badge-lg">REVIEW</span></div>
+								<div class="col-md-12" style="margin-left: -15px;"><span class="webinar-highlight">WEBINAR</span> | Human Resources Training | <span class="date-highlight">Completed July 19, 2017</span></div>
+							</div>	
+						</li>
+						<li>
+							<div class="col-md-12">
+								<div class="col-md-8" style="margin-left: -15px;"><h4>Course Name Title</h4></div>
+								<div class="col-md-3 pull-right"><span class="badge-lg">REVIEW</span></div>
+								<div class="col-md-12" style="margin-left: -15px;"><span class="webinar-highlight">WEBINAR</span> | Human Resources Training | <span class="date-highlight">Completed July 19, 2017</span></div>
+							</div>	
+						</li>
+						<li>
+							<div class="col-md-12">
+								<div class="col-md-8" style="margin-left: -15px;"><h4>Course Name Title</h4></div>
+								<div class="col-md-3 pull-right"><span class="badge-lg">REVIEW</span></div>
+								<div class="col-md-12" style="margin-left: -15px;"><span class="webinar-highlight">WEBINAR</span> | Human Resources Training | <span class="date-highlight">Completed July 19, 2017</span></div>
+							</div>	
+						</li>
+					</ul>	
+					
+
+					</div>
+					<div class=" col-md-3 request-resource">
+				      	<div class="row"> 
+				        <div class="col-sm-9 col-sm-push-3">
+				          <h4>Request Resource</h4>
+				          <p class="description" style="margin-bottom: 40px;">Looking for a resource you don't see in your library?</p>
+				          <button class="btn btn-primary">REQUEST</button>
+				          
+				        </div>
+				        <div class="col-sm-3 col-sm-pull-9">
+				            <img src="images/resources-icon.svg">
+				        </div>
+				      	</div>
+					</div><!-- -->
+					
+					
+				</div>
+			
+		</div>
+	
+    </div><!-- /main-wrap -->
+	</div><!-- /main content -->
+
+ </div><!-- /row -->     
+</div><!-- /container -->
+
+
+        
+<footer class="footer">
+  <div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-sm-3 col-md-5">
+			<h4 class="text-muted">CONTACT US</h4>
+			<p>
+			  <a href="tel:1-800-242-6099">Tel 800-242-6099</a><br>
+			  <a href="#">Fax 866-513-7171</a>
+			</p>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-4">
+			<h4 class="text-muted">CONNECT WITH US</h4>
+			<p class="em-footer-connect">
+			 <a href="https://www.linkedin.com/company/emtrain"><i class="fa fa-linkedin fa-2x"></i></a>
+			 <a href="https://twitter.com/Emtrain"><i class="fa fa-twitter fa-2x"></i></a>
+			 <a href="https://www.facebook.com/Emtrain"><i class="fa fa-facebook-official fa-2x"></i></a>
+			 <a href="https://plus.google.com/+Emtrain/videos"><i class="fa fa-google-plus fa-2x"></i></a>
+			 <br>
+			 <a href="http://support.emtrain.com/hc/en-us">Support &amp; Help Center</a><br>
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 text-right em-footer-brand">
+			<img src="./images/emtrain-header-logo-white.png" class="em-logo" alt="Emtrain" title="Emtrain">
+			<p>
+			  <a href="http://emtrain.com/privacy-policy">Privacy Policy &amp; Terms of Use</a>
+			</p>
+		</div>
+  </div>
+  </div>
+</footer>
+
+
+
+
+
+    <!-- emtrain core JavaScript
+    ================================================== -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/emtrain.js"></script>
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./js/app/select2.min.js"></script>
+    <script src="./js/app/emtrain-app.js"></script>
+
+	<script src="./js/app/pickadate/picker.js"></script>
+	<script src="./js/app/pickadate/picker.date.js"></script>
+	<script src="./js/app/pickadate/picker.time.js"></script>
+	<script src="./js/app/pickadate/legacy.js"></script>
+	<script src="./js/float-label.js"></script>
+	<script src="./js/salvattore.min.js"></script>
+	
+	
+
+
+	<script>
+	/* Modal fixes for AJAX Remote Page Loading */
+	$('#em-lms-modal').on('loaded.bs.modal', function (e) {
+	  $('#em-lms-modal').removeData();
+	});
+
+	$(document).ready(function(){
+	  $('body').on('hidden.bs.modal', '.modal', function () {
+		$(this).removeData('bs.modal');
+	  });
+	});
+
+	$(document).ready(function(){
+	  $('body').on('hidden.bs.modal', '.modal', function () {
+		$(this).removeData('bs.modal');
+		$("#" + $(this).attr("id") + " .modal-content").empty();
+		$("#" + $(this).attr("id") + " .modal-content").append("Loading...");
+	  });
+	});
+	
+	/* Sets cursor focus on desired ID element in modal */
+	$('#em-lms-modal').on('shown.bs.modal', function () {
+	  $('#e1').focus()
+	})	
+	/* End Modal */	
+
+
+
+	/* 
+		Should go into ./js/app/emtrain-app.js or a page specific file... up to you guys
+		
+		Not the full code for doesn't work... see https://select2.github.io/examples.html#data-ajax 
+		for examples and format options. 
+		
+		I would not include the image and other bits that they show for the formatter, just text ala the other fields 
+	*/
+	$(".js-data-name").select2({
+	  ajax: {
+		url: "https://api.github.com/search/repositories",
+		dataType: 'json',
+		delay: 250,
+		data: function (params) {
+		  return {
+			q: params.term, // search term
+			page: params.page
+		  };
+		},
+		processResults: function (data, params) {
+		  // parse the results into the format expected by Select2
+		  // since we are using custom formatting functions we do not need to
+		  // alter the remote JSON data, except to indicate that infinite
+		  // scrolling can be used
+		  params.page = params.page || 1;
+
+		  return {
+			results: data.items,
+			pagination: {
+			  more: (params.page * 30) < data.total_count
+			}
+		  };
+		},
+		cache: true
+	  },
+	  escapeMarkup: function (markup) { return markup; }, // let our custom formatter work
+	  minimumInputLength: 1
+	});
+	
+	$(".js-data-position").select2();
+	$(".js-data-office").select2();
+	$(".js-data-age").select2();
+	$(".js-data-salary").select2();
+	
+	/* 
+		Datepicker JS
+	*/
+	$('#datepicker').pickadate()
+	
+	</script>        
+  </body>
+</html>
